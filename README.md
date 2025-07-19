@@ -1,2 +1,2 @@
-# voiceRecognition
-A Voice Recognition System using Python that captures and processes speech to identify or verify a speaker or convert speech to text. It uses libraries like SpeechRecognition and PyAudio. Useful for virtual assistants, voice commands, and secure authentication with hands-free access. 
+# Voice-Recognition-System-using-Python
+This project is made using Python module named Speech Recognition.  It can convert user voice into text in real time using the Google API. User can use other API which they are comfortable with.  I have used Google API as it was free and doesn't require any login

@@ -1,0 +1,15 @@
+In this code, we are using the 'speech_recognition' library to convert spoken words into text. The 'Recognizer' object is used to recognize speech using Google Speech Recognition.
+
+The code is wrapped in a 'try-except' block to handle any exceptions that may occur during the execution of the code. The 'KeyboardInterrupt' exception is raised when the user presses Ctrl+C to stop the program.
+
+The 'while True' loop is used to continuously listen for speech. When the user speaks into the microphone, the audio is captured and passed to the 'recognize_google' method of the 'Recognizer' object. This method sends the audio to the Google Speech Recognition service and returns the recognized text.
+
+If the recognized text is successfully returned, it is printed to the console. If there is an issue with the audio (e.g., it cannot be understood), an appropriate error message is printed.
+
+The 'source' object is a 'Microphone' instance, which is used to capture audio from the microphone. The 'listen' method of the 'Recognizer' object is used to capture audio from the microphone. The 'listen' method takes a 'Microphone' object as an argument and returns the captured audio as an 'AudioData' object.
+
+The 'text' variable is used to store the recognized text. The 'lower' method is called on the 'text' variable to convert the text to lowercase. This is done because the 'recognize_google' method may return text in different cases, and it is easier to compare and handle lowercase text.
+
+The 'recognize_google' method may raise an 'UnknownValueError' if it cannot understand the audio, or a 'RequestError' if there is an issue with the request to the Google Speech Recognition service. These exceptions are caught and handled by printing an appropriate error message to the console.
+
+The program will continue to listen for speech and print the recognized text until the user presses Ctrl+C to stop the program.
